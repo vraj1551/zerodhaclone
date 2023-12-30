@@ -139,7 +139,6 @@ main{
     line-height: 1.5;
     font-weight: 500;
     margin-bottom: 20px;
-
 }
 .marketing .container .info p{
     font-size: 1rem;
@@ -239,4 +238,29 @@ main{
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 15px;
+}
+
+
+.marketing .container .info h4{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.marketing .container .info p{
+    margin-bottom: 15px;
+}
+.varsity a{
+    color: #387ed1;
+    text-decoration: none;
+}
+.varsity-info{
+    padding-top: 20px;
+}
+
+.last-section{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #666;
 }
