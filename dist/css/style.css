@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
 }
 header{
+    z-index: inherit;
     position: relative;
     box-shadow: 2px 1px 2px #eee;
     width: 100%;
@@ -64,6 +65,7 @@ main{
 
 }
 .hero .content{
+    max-width: 100vw;
     width: 1100px;
     margin: 0 auto;
     /* background-color: red; */
@@ -74,8 +76,8 @@ main{
 }
 .landing-img{
     padding-bottom: 60px;
-    max-height: 52vh;
-    max-width: 100%;
+    max-width: 52vw;
+    max-height: 100%;
 }
 
 .landing-heading{
@@ -123,6 +125,7 @@ main{
 
 .marketing .container .img{
     width: 39.3333%;
+    /* display: none; */
 }
 .marketing .container img{
     width: 100%;
@@ -375,4 +378,69 @@ footer .container .column{
     font-size: .75rem;
     text-decoration: none;
     font-weight: 500;
+}
+@media only screen and (max-width: 880px){
+    .landing-img{
+        max-width: 90%;
+    }
+    .landing-heading{
+        text-align: center;
+    }
+    .landing-subheading{
+        text-align: center;
+    }
+    
+    .marketing .container{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* background-color: #387ed1; */
+    }
+    .marketing .container img{
+        max-width: 100vw;
+        width: 90vw;
+        margin-bottom: 30px;
+    }
+    .marketing .container .info{
+        width: 100%;
+        /* background-color: #387ed1; */
+    }
+
+    .marketing-2 .container{
+        max-width: 90vw;
+        /* background-color: #387ed1; */
+    }
+
+    .pricing-grid{
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+        width: 100%;
+    }
+    .grid-item{
+        width: 100%;
+    }
+
+    footer{
+        /* max-width: 90vw; */
+    }
+    footer .container{
+        max-width: 90vw;
+        /* background-color: #387ed1; */
+    }
+    footer .container .row{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .container .row .column{
+        /* background-color: rebeccapurple; */
+        width: 100%;
+    }
+    .footer-social{
+        margin-bottom: 40px;
+    }
+    .footer-list{
+        margin-bottom: 40px;
+    }
 }
